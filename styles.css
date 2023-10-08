@@ -1,0 +1,7 @@
+body {
+    font-size: 30px;
+}
+.mnwidth {
+    max-width: 1600px;
+    margin: 0px auto;
+}

@@ -4,38 +4,81 @@
     <head>
         <meta charset="UTF-8">
         <title>Basic Template</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <div class="container">
-            <h1>Asogalatas: solidaridad, responsabilidad, compromiso y accion  site</h1>
-            <br>
-            <p>
-                Asogalatas : Asociacion de bienestra social
-            </p>
-            <hr>
-            <h3>
-                Nuestra galeria de fotos y videos, y tambien podras encontrar informacion sobre los eventos
-            </h3>
-            <!-- table with sample images that exist on the internet-->
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Imagenes</th>
-                        <th>Videos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" style="width:150px;"></td>
-                        <td><img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" style="width:150px;"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" style="width:150px;"></td>
-                        <td><img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="Paris" style="width:150px;"></td>
-                    </tr>
-                </tbody>
-            </table>
+    <body class="">
+        <header class="flex items-center justify-between bg-gray-300 px-20 py-5 sticky top-0">
+            <h3>Asogalatas</h3>
+            <div class="flex gap-10">
+                <a href="index.html">Contacto</a>
+                <div class="icons-media">
+                    <a href="https://www.facebook.com/asogalatas" target="_blank" class="text-2xl"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="h-[75vh] flex items-center justify-center bg-[url('images/RE4wySn.webp')] bg-no-repeat bg-cover text-white bg-black bg-opacity-30 bg-blend-darken">
+            <div class="max-w-8xl text-center">
+                <h1 class="text-6xl font-bold">Asogalatas : Asociacion de bienestar social</h1>
+                <p class="italic pt-6">"Solidaridad, Responsabilidad, Compromiso y Accion"</p>
+            </div>
+        </div>
+        <div class="historia bg-black bg-opacity-80">
+            <div class="py-20 mnwidth text-white mx-auto px-20">
+                <h3 class='text-center text-4xl font-bold mb-10'>
+                    HISTORIA DE ASOGALATAS
+                </h3>
+                <div class="flex gap-20 items-center">
+                    <div class="w-1/2">
+                        <img src="images/img-2.jpg" alt="" class="w-full">
+                    </div>
+                    <div class="w-1/2">
+                        <div class="flex flex-col gap-4">
+                            <p>
+                                Allá por  el año 2014 y por iniciativa de un pequeño grupo de vecinos de la comunidad, organizamos una  fiesta para niños de escasos recursos en Calle del Rio, Los Ángeles de Santo domingo de Heredia, Costa Rica.
+                            </p>
+                            <p>
+                                No teníamos dinero. Como decimos en Costa Rica, … “ni un cinco”.
+                                Nos dimos a la tarea de buscar algunos padrinos que nos ayudaran y logramos el objetivo. Una pequeña actividad para 56 niños de la comunidad.
+                                Nació la idea… !!!
+                            </p>
+                            <p>
+                                Luego año con año continuamos con la actividad y llegamos al año 2021.
+                                En esta oportunidad: 102 niños.
+                                Desde hacía algunos años antes merodeaba en mi mente la creación de una asociación de bienestar social para la ayuda a niños, jóvenes y adultos mayores de la comunidad.
+                            </p>
+                            <p>
+                                Esa idea resonaba una y otra vez, todos los días, todos los meses, y por muchos años
+                                Y entonces en agosto del 2021 decidí entrarle al asunto en serio y empecé.
+                            </p>
+                            <p>
+                                Conversé con varias amigos y amigas y les presenté la idea… aceptaron.
+                                Reuniones van… reuniones vienen … compartir ideas.
+                                Redactamos estatutos y durante dos meses dedicamos nuestro tiempo a revisarlos hasta llegar al punto final y su definición… logrado.
+                            </p>
+                            <p>
+                                El 8 de noviembre 2021 nuestra reunión final… la del principio.
+                                Gracias Cristina, Maricel, Ana Lía, Katherine, Eduardo, Christopher, Fabian, Andrés, Giovanny… por su sí … socios fundadores.
+                            </p>
+                            <p>
+                                Y de ahí en adelante los trámites legales, notaria, Registro de Asociaciones, meses e inicio oficial.
+                                Y aquí estamos… con rumbo definido y actuando y … siendo… Asogálatas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galeria bg-red-200">
+            <div class="py-20 max-w-6xl text-white mx-auto">
+                <h3 class='text-center text-4xl font-bold mb-10'>
+                    Galeria
+                </h3>
+            </div>
         </div>
     </body>
 </html>

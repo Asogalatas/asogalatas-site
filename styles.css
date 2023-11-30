@@ -5,3 +5,17 @@ body {
     max-width: 1600px;
     margin: 0px auto;
 }
+
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.tab-link {
+    padding: 15px;
+}
+
+.tab-link.active {
+    background-color: #00c1ff59;
+}

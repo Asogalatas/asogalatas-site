@@ -10,9 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="scripts.js"></script>
     </head>
     <body class="">
-        <header class="flex items-center justify-between bg-gray-300 px-20 py-5 sticky top-0">
+        <header class="flex items-center justify-between bg-gray-300 px-20 py-5 sticky top-0 z-50">
             <h3>Asogalatas</h3>
             <div class="flex gap-10">
                 <a href="index.html">Contacto</a>
@@ -32,46 +35,138 @@
                 <h3 class='text-center text-4xl font-bold mb-10'>
                     HISTORIA DE ASOGALATAS
                 </h3>
-                <div class="flex gap-20 items-center">
-                    <div class="w-1/2">
-                        
-                    </div>
-                    <div class="w-1/2">
-                        <div class="flex flex-col gap-4">
+                <div class="">
+                    <nav class="p-4">
+                        <div class="container mx-auto flex justify-between items-center">
+                            <div class="space-x-4 main-tabs">
+                                <a href="#" class="text-white tab-link" data-target="historia">Historia</a>
+                                <a href="#" class="text-white tab-link" data-target="mision">Mision</a>
+                                <a href="#" class="text-white tab-link" data-target="vision">Vision</a>
+                                <a href="#" class="text-white tab-link" data-target="galeria">Galeria</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container mx-auto p-8">
+                        <div id="historia" class="tab-content active" data-tab="main">
+                            <div>
+                                <p>
+                                    Allá por  el año 2014 y por iniciativa de un pequeño grupo de vecinos de la comunidad, organizamos una  fiesta para niños de escasos recursos en Calle del Rio, Los Ángeles de Santo domingo de Heredia, Costa Rica.
+                                </p>
+                                <p>
+                                    No teníamos dinero. Como decimos en Costa Rica, … “ni un cinco”.
+                                    Nos dimos a la tarea de buscar algunos padrinos que nos ayudaran y logramos el objetivo. Una pequeña actividad para 56 niños de la comunidad.
+                                    Nació la idea… !!!
+                                </p>
+                                <p>
+                                    Luego año con año continuamos con la actividad y llegamos al año 2021.
+                                    En esta oportunidad: 102 niños.
+                                    Desde hacía algunos años antes merodeaba en mi mente la creación de una asociación de bienestar social para la ayuda a niños, jóvenes y adultos mayores de la comunidad.
+                                </p>
+                                <p>
+                                    Esa idea resonaba una y otra vez, todos los días, todos los meses, y por muchos años
+                                    Y entonces en agosto del 2021 decidí entrarle al asunto en serio y empecé.
+                                </p>
+                                <p>
+                                    Conversé con varias amigos y amigas y les presenté la idea… aceptaron.
+                                    Reuniones van… reuniones vienen … compartir ideas.
+                                    Redactamos estatutos y durante dos meses dedicamos nuestro tiempo a revisarlos hasta llegar al punto final y su definición… logrado.
+                                </p>
+                                <p>
+                                    El 8 de noviembre 2021 nuestra reunión final… la del principio.
+                                    Gracias Cristina, Maricel, Ana Lía, Katherine, Eduardo, Christopher, Fabian, Andrés, Giovanny… por su sí … socios fundadores.
+                                </p>
+                                <p>
+                                    Y de ahí en adelante los trámites legales, notaria, Registro de Asociaciones, meses e inicio oficial.
+                                    Y aquí estamos… con rumbo definido y actuando y … siendo… Asogálatas
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mision" class="tab-content" data-tab="main">
                             <p>
-                                Allá por  el año 2014 y por iniciativa de un pequeño grupo de vecinos de la comunidad, organizamos una  fiesta para niños de escasos recursos en Calle del Rio, Los Ángeles de Santo domingo de Heredia, Costa Rica.
-                            </p>
-                            <p>
-                                No teníamos dinero. Como decimos en Costa Rica, … “ni un cinco”.
-                                Nos dimos a la tarea de buscar algunos padrinos que nos ayudaran y logramos el objetivo. Una pequeña actividad para 56 niños de la comunidad.
-                                Nació la idea… !!!
-                            </p>
-                            <p>
-                                Luego año con año continuamos con la actividad y llegamos al año 2021.
-                                En esta oportunidad: 102 niños.
-                                Desde hacía algunos años antes merodeaba en mi mente la creación de una asociación de bienestar social para la ayuda a niños, jóvenes y adultos mayores de la comunidad.
-                            </p>
-                            <p>
-                                Esa idea resonaba una y otra vez, todos los días, todos los meses, y por muchos años
-                                Y entonces en agosto del 2021 decidí entrarle al asunto en serio y empecé.
-                            </p>
-                            <p>
-                                Conversé con varias amigos y amigas y les presenté la idea… aceptaron.
-                                Reuniones van… reuniones vienen … compartir ideas.
-                                Redactamos estatutos y durante dos meses dedicamos nuestro tiempo a revisarlos hasta llegar al punto final y su definición… logrado.
-                            </p>
-                            <p>
-                                El 8 de noviembre 2021 nuestra reunión final… la del principio.
-                                Gracias Cristina, Maricel, Ana Lía, Katherine, Eduardo, Christopher, Fabian, Andrés, Giovanny… por su sí … socios fundadores.
-                            </p>
-                            <p>
-                                Y de ahí en adelante los trámites legales, notaria, Registro de Asociaciones, meses e inicio oficial.
-                                Y aquí estamos… con rumbo definido y actuando y … siendo… Asogálatas
+                                Somos una asociación sin fines de lucro, que busca el bienestar social de la comunidad de Calle del Rio, Los Ángeles de Santo Domingo de Heredia, Costa Rica.
+                                Nuestra misión es ayudar a niños, jóvenes y adultos mayores de la comunidad, en la medida de nuestras posibilidades, a través de actividades de bienestar social.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <div id="vision" class="tab-content" data-tab="main">
+                            <p>
+                                Ser una asociación reconocida por su labor social en la comunidad de Calle del Rio, Los Ángeles de Santo Domingo de Heredia, Costa Rica.
+                            </p>
+                        </div>
+                        <div id="galeria" class="tab-content" data-tab="main">
+                            <div>
+								<nav class="p-4">
+									<div class="container mx-auto flex justify-between items-center">
+										<div class="space-x-4 nest-tabs">
+											<a href="#" class="text-white tab-link active" data-target="tab-kids">Niños</a>
+											<a href="#" class="text-white tab-link" data-target="tab-youths">Jovenes</a>
+											<a href="#" class="text-white tab-link" data-target="tab-senior-citizen">Adultos Mayores</a>
+										</div>
+									</div>
+								</nav>
+                                <div class="">
+									<div id="tab-kids" class="tab-content active" data-tab="nest">
+										<div class="masonry-grid">
+											<div class="masonry-sizer"></div>
+											<div class="masonry-item">
+												<img src="images/activities/kids-day/1.jpeg" alt="Kids Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/kids-day/2.jpeg" alt="Kids Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/kids-day/4.jpeg" alt="Kids Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/kids-day/5.jpeg" alt="Kids Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/kids-day/6.jpeg" alt="Kids Day Image">
+											</div>
+										</div>  
+									</div>
+
+									<div id="tab-youths" class="tab-content" data-tab="nest">
+										<div class="masonry-grid">
+											<div class="masonry-sizer"></div>
+											<div class="masonry-item">
+												<img src="images/activities/senior-citizen-day/1.jpeg" alt="Senior Citizen Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/senior-citizen-day/2.jpeg" alt="Senior Citizen Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/senior-citizen-day/3.jpeg" alt="Senior Citizen Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/senior-citizen-day/4.jpeg" alt="Senior Citizen Day Image">
+											</div>
+										</div>
+									</div>
+
+
+									<div id="tab-senior-citizen" class="tab-content" data-tab="nest">
+										<div class="masonry">
+											<div class="masonry-sizer"></div>
+											<div class="masonry-item">
+												<img src="images/activities/youth-day/1.jpeg" alt="Youth Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/youth-day/2.jpeg" alt="Youth Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/youth-day/3.jpeg" alt="Youth Day Image">
+											</div>
+											<div class="masonry-item">
+												<img src="images/activities/youth-day/4.jpeg" alt="Youth Day Image">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
         <div class="galeria bg-red-200">
             <div class="py-20 max-w-6xl text-white mx-auto">

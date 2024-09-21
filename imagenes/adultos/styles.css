@@ -242,7 +242,7 @@ body {
             }
             .redbx {
                 background-color: #46a0c4;
-                padding: 300px 20px 60px 20px;
+                padding: 60px 20px 60px 20px;
                 color: white;
             }
             .sect5 h1 {
@@ -424,6 +424,29 @@ body {
                 width: 100%;
                 max-width: 520px;
             }
+            .image-gallery > img {
+                width: 10%;
+                margin-top: 20px;
+                height: 100px;
+                object-fit: cover;
+            }
+            .image-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                gap: 10px;
+                justify-content: center;
+            }
+            .main-image img {
+                height: 65vh;
+                margin: 0px auto;
+                border-radius: 10px;
+            }
+            @media(max-width: 991px) {
+                .image-gallery > img {
+                    width: calc(20% - 10px);
+                }
+            }
             @media (min-width: 1200px) {
                 .containersc {
                     width: 1170px;
@@ -487,9 +510,6 @@ body {
                 .sect7 {
                     padding: 20px;
                 }
-                .redbx {
-                    padding: 300px 20px;
-                } 
                 .sectoffst-7 {
                     padding: 540px 20px 0px 20px;
                 }

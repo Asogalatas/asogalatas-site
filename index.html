@@ -8,11 +8,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/a20679070a.js" crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="">
-        <header class="flex items-center justify-between bg-gray-300 px-20 py-5 sticky top-0">
-            <h3>Asogalatas</h3>
+        <header class="flex items-center justify-between px-20 py-5 sticky top-0 hdr-top flex-wrap">
+            <a href="/">
+                <h3>Asogalatas</h3>
+            </a>
             <div class="flex gap-10">
                 <a href="index.html">Contacto</a>
                 <div class="icons-media">
@@ -20,64 +26,109 @@
                 </div>
             </div>
         </header>
-        <div class="h-[75vh] flex items-center justify-center bg-[url('images/RE4wySn.webp')] bg-no-repeat bg-cover text-white bg-black bg-opacity-30 bg-blend-darken">
-            <div class="max-w-8xl text-center">
-                <h1 class="text-6xl font-bold">Asogalatas : Asociacion de bienestar social</h1>
-                <p class="italic pt-6">"Solidaridad, Responsabilidad, Compromiso y Accion"</p>
-            </div>
-        </div>
-        <div class="historia bg-black bg-opacity-80">
-            <div class="py-20 mnwidth text-white mx-auto px-20">
-                <h3 class='text-center text-4xl font-bold mb-10'>
-                    HISTORIA DE ASOGALATAS
-                </h3>
-                <div class="flex gap-20 items-center">
-                    <div class="w-1/2">
-                        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
+            <div class="main-ct">
+                <div class="sect2-bar">
+                    <div class="containersc">
+                        <div class="flx-lr">
+                            <div>
+                                <h1 class="osans" style="">
+                                    Asogálatas:
+                                    <br>
+                                    Asociacion de bienestar social
+                                </h1>
+                                <div class="p2b osans italic">
+                                    "Solidaridad, Responsabilidad, Compromiso y Accion"
+                                </div>
+                                <a href="" class="btn">Contáctanos</a>
+                            </div>
+                            <div>
+                                <div>
+                                    <div class="slider">
+                                        <div>
+                                            <img src="/images/children/img-3.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <img src="/images/children/img-2.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                        
+                                        <div>
+                                            <img src="/images/adults/img-1.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <img src="/images/youth/img-1.jpeg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-1/2">
-                        <div class="flex flex-col gap-4">
-                            <p>
-                                Allá por  el año 2014 y por iniciativa de un pequeño grupo de vecinos de la comunidad, organizamos una  fiesta para niños de escasos recursos en Calle del Rio, Los Ángeles de Santo domingo de Heredia, Costa Rica.
-                            </p>
-                            <p>
-                                No teníamos dinero. Como decimos en Costa Rica, … “ni un cinco”.
-                                Nos dimos a la tarea de buscar algunos padrinos que nos ayudaran y logramos el objetivo. Una pequeña actividad para 56 niños de la comunidad.
-                                Nació la idea… !!!
-                            </p>
-                            <p>
-                                Luego año con año continuamos con la actividad y llegamos al año 2021.
-                                En esta oportunidad: 102 niños.
-                                Desde hacía algunos años antes merodeaba en mi mente la creación de una asociación de bienestar social para la ayuda a niños, jóvenes y adultos mayores de la comunidad.
-                            </p>
-                            <p>
-                                Esa idea resonaba una y otra vez, todos los días, todos los meses, y por muchos años
-                                Y entonces en agosto del 2021 decidí entrarle al asunto en serio y empecé.
-                            </p>
-                            <p>
-                                Conversé con varias amigos y amigas y les presenté la idea… aceptaron.
-                                Reuniones van… reuniones vienen … compartir ideas.
-                                Redactamos estatutos y durante dos meses dedicamos nuestro tiempo a revisarlos hasta llegar al punto final y su definición… logrado.
-                            </p>
-                            <p>
-                                El 8 de noviembre 2021 nuestra reunión final… la del principio.
-                                Gracias Cristina, Maricel, Ana Lía, Katherine, Eduardo, Christopher, Fabian, Andrés, Giovanny… por su sí … socios fundadores.
-                            </p>
-                            <p>
-                                Y de ahí en adelante los trámites legales, notaria, Registro de Asociaciones, meses e inicio oficial.
-                                Y aquí estamos… con rumbo definido y actuando y … siendo… Asogálatas
-                            </p>
+                </div>
+                
+                <div class="sect4 offset-sect">
+                    <div class="blob-box">
+                        <div class="containersc flx-lr">
+                            <div class="sect4-l">
+                                <h1>Nuestra Historia</h1>
+                                <div class="brdr-pink"></div>
+                                <div class="p">
+                                    Allá por el año <b>2014</b> y por iniciativa de un pequeño grupo de vecinos de la comunidad, organizamos una fiesta para niños de escasos recursos en Calle del Rio, Los Ángeles de Santo Domingo de Heredia, Costa Rica. <br>
+
+                                    <b>No teníamos dinero.</b> Como decimos en Costa Rica, … “ni un cinco”. Nos dimos a la tarea de buscar algunos padrinos que nos ayudaran y logramos el objetivo. Una pequeña actividad para <b>56 niños</b> de la comunidad. Nació la idea… !!! <br>
+                                    
+                                    Luego año con año continuamos con la actividad y llegamos al año <b>2021</b>. En esta oportunidad: <b>102 niños.</b> Desde hacía algunos años antes merodeaba en mi mente la creación de una asociación de bienestar social para la ayuda a niños, jóvenes y adultos mayores de la comunidad.
+                                    <br>
+                                    Esa idea resonaba una y otra vez, todos los días, todos los meses, y por muchos años Y entonces en <b>Agosto del 2021</b> decidí entrarle al asunto en serio y empecé.
+                                    <br>
+                                    Conversé con varias amigos y amigas y les presenté la idea… aceptaron. Reuniones van… reuniones vienen … compartir ideas. Redactamos estatutos y durante dos meses dedicamos nuestro tiempo a revisarlos hasta llegar al punto final y su definición… <b>logrado.</b>
+                                    <br>
+                                    El <b>8 de noviembre 2021</b> nuestra reunión final… la del principio. Gracias Cristina, Maricel, Ana Lía, Katherine, Eduardo, Christopher, Fabian, Andrés, Giovanny… por su sí … socios fundadores.
+                                    <br>
+                                    Y de ahí en adelante los trámites legales, notaria, Registro de Asociaciones, meses e inicio oficial. <b> Y aquí estamos…</b> con rumbo definido y actuando y … siendo… <b>Asogálatas</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect5 redbx">
+                    <div class="containersc">
+                        <h1>
+                        <b>Galeria</b>
+                        </h1>
+                        <div class="brdr-pink center-margin"></div>
+                        <div class="sect7-flx-blobs">
+                            <a class="sect7-blob" href="/imagenes/niños">
+                                <div class='bxshdw'>
+                                    <img src="/images/children/img-1.jpeg">
+                                    <h2>Niños</h2>
+                                    <div class="p">"La niñez es la base de un futuro mejor; cuidarla es nuestra misión."</div>
+                                </div>
+                            </a>
+                            <a class="sect7-blob" href="/imagenes/jovenes">
+                                <div class='bxshdw'>
+                                    <img src="/images/youth/img-1.jpeg">
+                                    <h2>Jovenes</h2>
+                                    <div class="p">La juventud es el motor del cambio; apoyarla es nuestro compromiso.</div>
+                                </div>
+                            </a>
+                            <a class="sect7-blob" href="/imagenes/adultos">
+                                <div class='bxshdw'>
+                                    <img src="/images/adults/img-1.jpeg">
+                                    <h2>Adultos Mayores</h2>
+                                    <div class="p">El bienestar de los adultos mayores es esencial; brindarles cuidado y respeto es nuestra prioridad.</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="galeria bg-red-200">
-            <div class="py-20 max-w-6xl text-white mx-auto">
-                <h3 class='text-center text-4xl font-bold mb-10'>
-                    Galeria
-                </h3>
-            </div>
-        </div>
     </body>
 </html>

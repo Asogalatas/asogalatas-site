@@ -503,8 +503,8 @@ body {
                     margin-bottom: 20px;
                 }
                 .sect7-blob img {
-                    width: 40px;
-                    height: 40px;
+                    width: 70%;
+                    margin: 10px auto;
                 }
                 .main-ct h1 {
                     font-size: 35px;

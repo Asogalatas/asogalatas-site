@@ -441,7 +441,34 @@ body {
                 height: 65vh;
                 margin: 0px auto;
                 border-radius: 10px;
+                object-fit: contain;
             }
+
+            .main-image {
+                position: relative;
+            }    
+
+            .main-image i {
+                position: absolute;
+                top: 45%;
+                font-size: 50px;
+                -webkit-text-stroke: 2px black;
+                text-stroke: 2px black;
+                padding: 20px;
+            }
+            .main-image i:hover {
+                cursor: pointer;
+                color: black;
+                -webkit-text-stroke: 2px white;
+                text-stroke: 2px white;
+            }
+            i.fas.fa-chevron-left {
+                left: 20px;
+            }
+            i.fas.fa-chevron-right {
+                right: 20px;
+            }
+
             @media(max-width: 991px) {
                 .image-gallery > img {
                     width: calc(20% - 10px);
